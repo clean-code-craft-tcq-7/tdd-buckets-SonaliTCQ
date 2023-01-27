@@ -12,7 +12,7 @@ TEST_CASE("Show range for current samples")
   std::streambuf* p_cout_streambuf = std::cout.rdbuf();
   std::cout.rdbuf(oss.rdbuf());
 
-  detect_range(3,5);
+  detect_range(2,5);
 
   std::cout.rdbuf(p_cout_streambuf);
   
