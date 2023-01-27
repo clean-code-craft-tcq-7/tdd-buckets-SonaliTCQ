@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int input_current_charge[] = { 3, 3, 5, 4, 10, 11, 12 };
+int input_current_charge[] = { 1, 2, 5, 4, 10, 2, 4, 4, 2 };
 
 void detect_range(int low_range, int upp_range)
 {
