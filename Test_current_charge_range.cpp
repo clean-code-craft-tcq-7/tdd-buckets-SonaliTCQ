@@ -1,4 +1,7 @@
 #include "current_charge_range.hpp"
+#include "test/catch.hpp"
+#include <iostream>
+#include <sstream>
 
 TEST_CASE("Show range for current samples")
 {
