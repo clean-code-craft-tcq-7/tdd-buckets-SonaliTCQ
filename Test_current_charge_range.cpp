@@ -1,4 +1,3 @@
-#include <iostream.h>
 #include "current_charge_range.hpp"
 
 TEST_CASE("Show range for current samples")
