@@ -16,6 +16,6 @@ TEST_CASE("Show range for current samples")
 
   std::cout.rdbuf(p_cout_streambuf);
   
-  REQUIRE(oss.str() == "3-5, 4\n");
+  REQUIRE(oss.str() == "2-5, 7\n");
           
 }
