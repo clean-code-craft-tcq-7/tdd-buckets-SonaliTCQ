@@ -5,7 +5,7 @@
 #include <iostream>
 #include <sstream>
 
-int* current_charge[] = { 1, 2, 5, 4, 10, 2, 4, 4, 2 };
+int current_charge[] = { 1, 2, 5, 4, 10, 2, 4, 4, 2 };
 
 TEST_CASE("Show range for current samples")
 {
@@ -14,7 +14,7 @@ TEST_CASE("Show range for current samples")
   std::streambuf* p_cout_streambuf = std::cout.rdbuf();
   std::cout.rdbuf(oss.rdbuf());
 
-  detect_range(*current_charge,2,5);
+  detect_range(current_charge,2,5);
 
   std::cout.rdbuf(p_cout_streambuf);
   
