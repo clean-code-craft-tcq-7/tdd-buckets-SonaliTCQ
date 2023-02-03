@@ -7,19 +7,17 @@
 
 using namespace std;
 
-int input_current_charge[] = { 1, 2, 5, 4, 10, 2, 4, 4, 2 };
-
-void detect_range(int low_range, int upp_range)
+void detect_range(int current_samples[], int low_range, int upp_range)
 {
 	int range_count = 0;
 
-	int length_array = sizeof(input_current_charge) / sizeof(input_current_charge[0]);
+	int length_array = sizeof(current_samples) / sizeof(current_samples[0]);
 
 	for (int range = low_range; range <= upp_range; range++)
 	{
 		for (int index = 0; index < length_array; index++)
 		{
-			if (input_current_charge[index] == range)
+			if (current_samples[index] == range)
 			{
 				range_count++;
 			}
